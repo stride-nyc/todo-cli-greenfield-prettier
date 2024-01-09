@@ -1,0 +1,137 @@
+.App-header {
+  background-color: #7d6953;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: #1e483e;
+  padding: 20px;
+}
+
+body {
+  background-color: #F8F5EE; /* new color */
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+  height: 50px;
+}
+
+.title {
+  margin-left: 20px;
+}
+
+.date {
+  font-size: 20px;
+}
+
+.empty-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh; /* Adjust as needed */
+}
+
+.empty-state {
+  background-image: url("../public/empty_task_list.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding:20px;
+  width: 200px;
+  height: 250px;
+}
+
+.empty-state h2 {
+  color: #1e483e;
+}
+
+.create-list-button {
+  background-color: #1e483e;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.todoLists {
+  margin-top: 69px;
+}
+.App-body {
+  margin-top: 70px;
+  margin-left: 48px;
+}
+
+.inputListName {
+  font-size: 24px;
+}
+
+table {
+  width: 80%;
+  margin-left: 81px;
+  margin-top: 60px;
+}
+
+table th:nth-child(1), table td:nth-child(1) {
+  text-align: left;
+  padding: 27px 0 27px 0;
+  border-bottom: 1px solid #A39382;
+  width: 80%;
+}
+
+table th:nth-child(2), table td:nth-child(2) {
+  text-align: left;
+  padding: 27px 0 27px 0;
+  border-bottom: 1px solid #A39382;
+  width: 20%;
+}
+.list-header {
+  display: flex;
+  align-items: center;
+}
+
+.clipboard-icon {
+  margin-right: 10px;
+}
+
+.list-name {
+  font-size: 24px;
+}
+
+.list-name.selected {
+  font-weight: bold;
+}
+.add-task-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  z-index: 1000;
+}
+button:hover {
+  cursor: pointer;
+}
+img:hover {
+  cursor: pointer;
+}
+.add-task-button {
+  background-color: transparent;
+  color: #1e483e;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
